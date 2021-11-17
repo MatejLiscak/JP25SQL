@@ -1,5 +1,5 @@
 drop database if exists githubucenje;
-create database githubucenje;
+create database githubucenje character set utf8;
 use githubucenje;
 
 create table git(
@@ -7,3 +7,4 @@ create table git(
     naziv varchar(50)
 );
 
+insert into git(sifra,naziv) values(null,'Test');
