@@ -26,3 +26,5 @@ create table zivotinja(
 
 alter table zivotinja add foreign key (osoba) references osoba(sifra);
 alter table zivotinja add foreign key (prostor) references prostor(sifra);
+
+
