@@ -10,7 +10,10 @@ create table korisnik(
 
 create table satovi(
     sifra int not null primary key auto_increment,
-    model varchar(50) not null
+    model varchar(50) not null,
+    velicina varchar(50) not null,
+    vrijednost varchar(50) not null
+
 );
 
 create table popravak(
@@ -22,3 +25,5 @@ create table popravak(
 
 alter table popravak add foreign key (korisnik) references korisnik(sifra);
 alter table popravak add foreign key (satovi) references satovi(sifra);
+
+insert into 
