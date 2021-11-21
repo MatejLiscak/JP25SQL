@@ -26,4 +26,17 @@ create table popravak(
 alter table popravak add foreign key (korisnik) references korisnik(sifra);
 alter table popravak add foreign key (satovi) references satovi(sifra);
 
-insert into 
+insert into korisnik(sifra,ime,prezime)values
+(null,'Mirko','Parić'),
+(null,'Alen','Žamor'),
+(null,'Antonio','Vutkić');
+
+insert into satovi(sifra,model,velicina)values
+(null,'Jaguar','11'),
+(null,'Rollex','13'),
+(null,'Rollex','14');
+
+insert into popravak(cijena,korisnik,satovi,segrt)values
+(430,1,1,false),
+(566,3,3,false),
+(1423,2,2,true);
